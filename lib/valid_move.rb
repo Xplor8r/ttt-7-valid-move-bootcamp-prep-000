@@ -1,7 +1,9 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  if position_taken?
-    move
+  if position_taken? && index[]
+    def move(board, index, value = 'X')
+  board[index] = value
+end
   end
 end
 
@@ -17,6 +19,3 @@ def input_to_index(input)
    input.to_i - 1
 end
 
-def move(board, index, value = 'X')
-  board[index] = value
-end
